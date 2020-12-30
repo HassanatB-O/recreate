@@ -2,7 +2,7 @@ function callAjax(){
     // Creating the XMLHttpRequest object
     var request = new XMLHttpRequest();
     // Instantiating the request object
-    request.open("GET", "https://opentdb.com/api.php?amount=10&type=boolean");
+    request.open("GET", "https://api.abalin.net/today");
     // Defining event listener for readystatechange event
     request.onreadystatechange = function() {
         // Check if the request is complete and was successful
