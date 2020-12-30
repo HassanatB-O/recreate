@@ -7,6 +7,7 @@ nav{
     height: 60px;
     background-color: rgb(3, 99, 213);
     border-bottom: 2px solid #77abe8;
+    box-sizing: border-box;
 }
 button{
     background-color: rgb(3, 99, 213);
@@ -32,7 +33,7 @@ button#create{
     width: 20%;
     text-align: center;
     border-right: 2px solid #c7c7c7;
-    height: 715px;
+    height: auto;
 }
 .box{
     display: flex;
@@ -66,14 +67,19 @@ a{
     position: relative;
     top: 20%;
     line-height: 35px;
+    text-align: center;
 }
-input{
-    padding: 7px;
+div#result{
     margin-top: 10px;
+    height: auto;
+    padding: 7px;
 }
 @media (min-width: 700px) and (max-width: 900px){
     .section1{
         width: 20%;
+    }
+    div#result, .section2{
+        overflow-x: scroll;
     }
 }
 @media (min-width: 499px) and (max-width: 699px){
@@ -86,6 +92,9 @@ input{
     button#create{
         width: 120px;
     }
+    div#result, .section2{
+        overflow-x: scroll;
+    }
 }
 @media (min-width: 275px) and (max-width: 498px){
     .section1{
@@ -97,6 +106,9 @@ input{
     button#create{
         width: 120px;
     }
+    div#result, .section2{
+        overflow-x: scroll;
+    } 
 }
 @media (min-width: 200px) and (max-width: 274px){
     .section1{
@@ -107,5 +119,8 @@ input{
     }
     button#create{
         width: 120px;
+    }
+    div#result, .section2{
+        overflow-x: scroll;
     }
 }
