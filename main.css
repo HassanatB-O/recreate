@@ -78,7 +78,11 @@ div#result{
     .section1{
         width: 20%;
     }
-    div#result, .section2{
+    div#result{
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+    .section2{
         overflow-x: scroll;
     }
 }
@@ -92,7 +96,11 @@ div#result{
     button#create{
         width: 120px;
     }
-    div#result, .section2{
+    div#result{
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+    .section2{
         overflow-x: scroll;
     }
 }
@@ -106,9 +114,13 @@ div#result{
     button#create{
         width: 120px;
     }
-    div#result, .section2{
+    div#result{
         overflow-x: scroll;
-    } 
+        overflow-y: scroll;
+    }
+    .section2{
+        overflow-x: scroll;
+    }
 }
 @media (min-width: 200px) and (max-width: 274px){
     .section1{
@@ -120,7 +132,11 @@ div#result{
     button#create{
         width: 120px;
     }
-    div#result, .section2{
+    div#result{
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+    .section2{
         overflow-x: scroll;
     }
 }
